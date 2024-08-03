@@ -1,0 +1,11 @@
+[package]
+name = "gitish"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = "0.11"  # For HTTP requests
+tokio = { version = "1", features = ["full"] }  # For async operations
+tar = "0.4"  # For handling tar archives
+git2 = "0.15"  # For interacting with Git repositories
+clap = { version = "4.5.8", features = ["derive"] }
