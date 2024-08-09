@@ -10,7 +10,7 @@ fn main() -> Result<(), Box<dyn Error>>{
 
     let bullet = Projectile{v_o:VEL, angle:ANGLE, grav:GRAVITY};
 
-    let file_path = "output.csv";
+    let file_path = "./outputs/output.csv";
     let mut wtr = Writer::from_path(file_path)?;
 
     // Write headers
