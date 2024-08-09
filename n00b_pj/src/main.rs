@@ -1,11 +1,12 @@
 mod add_ons;
+
 use rand::Rng;
 use std::process::exit;
 use std::thread::sleep;
 use std::time::Duration;
 
 use add_ons::utils;
-use add_ons::characters;
+use add_ons::characters::{Player, Enemy};
 use add_ons::gameplay;
 
 
@@ -34,21 +35,14 @@ fn main() {
     }
 
     if _boot_ans.trim() == "y"{
-        println!("Great, time to forge you an identity");
+        println!("Great, welcome Mr. Mercer, here is your ID pass.");
 
-        let player= characters::Player {
-            name: utils::usr_input("--> Name: "),
-            main_attack: utils::usr_input("--> main attack name[]: "),
-            archetype: utils::usr_input("--> your archetype[]: "), 
-            cybernetics: utils::usr_input("--> cybernetics you have[]: "),
-            inventory: vec![],
-            health: 10,
-        };
-        //Add code that saves player struc to a json file (see )
-        println!("Lets get the journey started{}!", player.name);
+        //// ....... ///// add a formatted output of Mercers ID card. Print out elements from the struct.  
+        //Add code that saves chosen player struc archetype to a save json file 
+        
     }
     
-    println!("As you walk doen the street you see a locked door. Your Kiroshi optic tells you there is something behind. ");
+    println!("As you walk down the street you see a locked door. Your Kiroshi optic tells you there is something behind. ");
     println!("");
     let _hack_init = utils::usr_input("Would you like to hack the door <y/n>");
 

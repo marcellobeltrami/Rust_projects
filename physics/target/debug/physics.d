@@ -1,0 +1,1 @@
+/home/marcello/Rust_projects/physics/target/debug/physics: /home/marcello/Rust_projects/physics/src/dep/functi.rs /home/marcello/Rust_projects/physics/src/dep/mod.rs /home/marcello/Rust_projects/physics/src/main.rs

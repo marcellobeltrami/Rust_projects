@@ -34,8 +34,23 @@ impl Repo {
 
         return repo;
 
-        
+    }
+
+    pub fn commit(&self){
+        println!("Merging and updating changes in {}", &self.usrrepo);
+
+
+        let repo = match Repository::open(&self.usrrepo) {
+            Ok(repo) => repo,
+            Err(e) => panic!("failed to open: {}", e),
+        };
+
+
+
+
     }
 
 
+
 }
+

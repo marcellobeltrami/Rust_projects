@@ -7,7 +7,7 @@ fn main() {
     let matches = Command::new("gitish")
     .version("1.0")
     .author("Marcello Beltrami")
-    .about("CLI with subcommands to control the app")
+    .about("git-like application in rust.")
      //Sub-command init 
     .subcommand( 
         Command::new("init")
@@ -22,6 +22,7 @@ fn main() {
         .arg(Arg::new("url").help("The item to add").required(true).index(1))
         .arg(Arg::new("usr_repo").help("The item to add").required(true).index(2)), 
     )
+   
     
     .get_matches();
 
